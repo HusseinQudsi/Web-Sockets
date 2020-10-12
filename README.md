@@ -1,4 +1,4 @@
-# Javascript ES6 Algorithms
+# Web Sockets using Socket.io
 
 NodeJS application featuring Web Sockets using Socket.io
 
