@@ -76,7 +76,6 @@ export const startServer = async (appConfig) => {
     return appConfig.http.listen(appConfig.config.port, () => (
       config.log.logs && console.log(`REST API on http://localhost:${config.port}/api`))
     )
-
   } catch (e) {
 
     config.log.error && console.error(e)
