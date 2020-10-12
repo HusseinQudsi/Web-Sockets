@@ -7,13 +7,10 @@
   "heroku-run-build-script": true,
   "scripts": {
     "build": "babel src --copy-files --out-dir dist",
-    "test": "npm run build && mocha dist/server/spec --recursive --exit",
     "test-brk": "npm run build && mocha dist/server/spec --recursive --exit --debug-brk",
-    "dev": "nodemon --exec npm run restart",
     "dev-brk": "rimraf dist && npm run build && nodemon --exec npm run start-brk",
-    "restart": "rimraf dist && npm run build && npm run start",
-    "start": "node dist/index.js",
-    "start-brk": "node --inspect-brk dist/index.js"
+    "start-brk": "node --inspect-brk dist/index.js",
+    "start": "node dist/index.js"
   },
   "husky": {
     "hooks": {
