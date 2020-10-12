@@ -1,2 +1,5 @@
-import { start } from './server/server'
-start()
+import { bootstrap, setUpSocket, startServer } from './server/server'
+
+const applicationConfig = bootstrap()
+setUpSocket(applicationConfig)
+startServer(applicationConfig)
